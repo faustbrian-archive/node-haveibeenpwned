@@ -1,8 +1,8 @@
-import { hash as sha1 } from "@faustbrian/node-sha1";
+import { sync as sha1 } from "simple-sha1";
 import fetch from "cross-fetch";
 
 export const pwned = async (password: string): Promise<number> => {
-  const hashedPassword: string = sha1(password).toString("hex");
+  const hashedPassword: string = sha1(password);
 
   const matches: RegExpExecArray | null = new RegExp(
     `${hashedPassword.slice(5).toUpperCase()}:(\\d+)`,

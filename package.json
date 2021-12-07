@@ -49,8 +49,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@faustbrian/node-sha1": "^1.0.0",
-    "bcrypto": "^5.4.0",
-    "cross-fetch": "^3.1.4"
+    "cross-fetch": "^3.1.4",
+    "simple-sha1": "^3.1.0"
   }
 }
